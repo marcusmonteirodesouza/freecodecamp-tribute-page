@@ -1,0 +1,43 @@
+{
+  "name": "freecodecamp-tribute-page",
+  "version": "1.0.0",
+  "description": "My solution to [FreeCodeCamp's Build a Tribute Page challenge](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page)",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write ./**/*.{html,css,json,md}",
+    "lint": "standard --fix",
+    "start": "serve"
+  },
+  "keywords": [],
+  "author": "Marcus Vinicius Monteiro de Souza",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "husky": "^3.0.9",
+    "lint-staged": "^9.4.2",
+    "prettier": "^1.18.2",
+    "serve": "^11.2.0",
+    "standard": "^14.3.1"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "globals": [
+      "fetch"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "./**/*.{html,css,json,md}": [
+      "prettier --write",
+      "git add"
+    ],
+    "./**/*.js": [
+      "standard --fix",
+      "git add"
+    ]
+  }
+}

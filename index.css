@@ -1,0 +1,15 @@
+li:not(:last-child) {
+  margin: 0 0 0.5em 0;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.6em;
+}
+
+img {
+  max-width: 80%;
+  height: auto;
+}

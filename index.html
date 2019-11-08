@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>FreeCodeCamp - Build a Tribute Page - SpaceX</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <main id="main">
+      <header>
+        <h1 id="title">
+          A Tribute to <a href="https://www.spacex.com/">SpaceX</a>
+        </h1>
+        <p id="tribute-info">
+          Founded by
+          <a
+            id="tribute-link"
+            href="https://en.wikipedia.org/wiki/Elon_Musk"
+            target="_blank"
+            >Elon Musk</a
+          >, this amazing company strives to take mankind to the stars.
+        </p>
+      </header>
+      <div id="content">
+        <section id="latest-launch">
+          <h2>Latest Launch</h2>
+          <div id="img-div">
+            <figure>
+              <div class="img-container">
+                <img id="image" />
+              </div>
+
+              <figcaption id="img-caption"></figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section id="history">
+          <h2>History</h2>
+          <ul id="history-events"></ul>
+        </section>
+      </div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
